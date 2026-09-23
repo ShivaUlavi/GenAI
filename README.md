@@ -1,2 +1,2 @@
 # GenAI
-Generative AI with LangChain
+Generative AI with LangChain(work in progess)
