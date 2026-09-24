@@ -1,6 +1,13 @@
 # Generative AI & Agentic Workflows Hub
 
-An enterprise-ready repository focused on building, evaluating, and deploying production-grade Large Language Model (LLM) applications. This codebase demonstrates advanced orchestrations using LangChain and LangGraph, focusing on resilient, stateful, and autonomous AI agents.
+Welcome to my Generative AI repository! This space serves as a central hub for my ongoing explorations, implementations, and projects focused on modern GenAI architectures. 
+
+**Note: This repository is actively under development and remains a work in progress.**
+
+## 🧠 Focus Areas
+The implementations here span across various advanced AI concepts, with a strong emphasis on:
+* **Agentic Architectures:** Building autonomous and semi-autonomous AI agents.
+* **Orchestration Frameworks:** Practical applications utilizing LangChain and LangGraph to build complex reasoning flows.
 
 ## 🛠️ Repository Architecture
 
@@ -17,8 +24,3 @@ An enterprise-ready repository focused on building, evaluating, and deploying pr
 *   **Languages:** Python (Pandas, NumPy, BeautifulSoup, Requests), SQL, Bash
 *   **Core Mechanics:** Vector Search, Stateful Memory Management, Automated Web Ingestion, Dynamic Routing
 
-## 🚀 Key Architectural Focus Areas
-
-1.  **State Management in Multi-Agent Systems:** Utilizing LangGraph to design complex graphs with clear nodes, conditional edges, and robust context retention across asynchronous agent interactions.
-2.  **Pipeline Resiliency:** Building specialized error-handling checkpoints to ensure agentic loops do not enter infinite cycles or crash during live API failures.
-3.  **Data Transformation:** Transforming unstructured text and web data (via custom scraping pipelines) into clean, vector-ready semantic tokens.
