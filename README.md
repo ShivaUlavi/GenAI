@@ -34,16 +34,6 @@ Welcome — this repository is my living portfolio of experiments, demos, and re
 This repo mixes polished demos with exploratory notebooks; some files are prototype code and not production hardened — please review before reuse.
 
 ---
-
-## Polished portfolio sections (what I can add next)
-If you want this README to act like a formal portfolio landing page, I can add:
-- A curated demo gallery (short descriptions + links to runnable notebooks)
-- Status badges (CI, Python version, Docker image, coverage)
-- A Roadmap / Milestones section showing planned features and upcoming notebooks
-- Installation scripts and a requirements.txt / environment.yml for reproducible execution
-
-Tell me which items above you'd like and I will add them.
-
 ---
 
 ## Getting started (recommended)
