@@ -89,10 +89,3 @@ Contact / profile: https://github.com/ShivaUlavi
 Email: shivachetanulavi@gmail.com
 
 ---
-
-## License
-If you'd like a permissive license added (MIT, Apache-2.0) tell me which and I will add a LICENSE file.
-
----
-
-I updated the README into a polished portfolio style: clearer sections, curated highlights, and next-step suggestions. If you want a demo gallery, badges, or an installation requirements file added now, tell me which pieces to prioritize and I will add them in the next commit.
