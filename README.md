@@ -1,26 +1,62 @@
 # Generative AI & Agentic Workflows Hub
 
-Welcome to my Generative AI repository! This space serves as a central hub for my ongoing explorations, implementations, and projects focused on modern GenAI architectures. 
+Welcome — this repository is my central hub for experiments, demos, and research work in generative AI and agentic workflows. I'm actively developing and adding materials (notebooks, demos, and utilities) — expect the contents to change over time.
 
-**Note: This repository is actively under development and remains a work in progress.**
+> Status: Work in progress — I'll be uploading new notebooks, tools, and examples as I continue building.
 
-## 🧠 Focus Areas
-The implementations here span across various advanced AI concepts, with a strong emphasis on:
-* **Agentic Architectures:** Building autonomous and semi-autonomous AI agents.
-* **Orchestration Frameworks:** Practical applications utilizing LangChain and LangGraph to build complex reasoning flows.
+## 🔎 Overview
 
-## 🛠️ Repository Architecture
+This repo collects hands-on examples and reference implementations around modern GenAI patterns and multi-agent orchestration.
 
-*   **`LangGraphDemo/`**: Implementation of advanced Agentic workflows. Showcases stateful multi-agent systems, conditional routing, and cyclic graphs where agents dynamically determine next steps based on tool outputs.
-*   **`RAG/`**: Advanced Retrieval-Augmented Generation architectures. Covers document chunking strategies, vector database integrations, semantic search, and re-ranking pipelines to mitigate LLM hallucinations.
-*   **`Tools/`**: Custom tool engineering enabling LLMs to securely interface with external APIs, web scrapers, and local system environments.
-*   **`ErrorHandling.ipynb`**: Resiliency engineering for GenAI pipelines. Implements custom exception handlers, token rate-limit retry logic, API timeout fallbacks, and structured data validation.
-*   **`Prompt_templates.ipynb`**: Structured prompt engineering frameworks focusing on Few-Shot prompting, Chain-of-Thought (CoT) reasoning, and output parsing to enforce JSON schema constraints.
-*   **`Local_models_demo.ipynb`**: Prototyping LLM architectures locally using open-source models (Ollama/Hugging Face), optimized for restricted corporate network environments.
+### Primary focus
+- Agentic architectures and orchestrations
+- LangChain / LangGraph based workflows and stateful reasoning graphs
+- Retrieval-Augmented Generation (RAG) patterns and vector search
+- Prompt engineering, structured outputs, and robust pipeline error handling
 
-## 🧰 Core Tech Stack
+## 📂 Repository layout
+- `LangGraphDemo/` — advanced agentic workflows and multi-agent examples (state graphs, reflection agents, Tree-of-Thought demos)
+- `RAG/` — retrieval-augmented generation experiments, chunking, vector DB integrations, and re-ranking
+- `Tools/` — custom tool integrations (web scraping, API wrappers, system helpers)
+- Notebooks such as `Prompt_templates.ipynb`, `ErrorHandling.ipynb`, and `Local_models_demo.ipynb`
 
-*   **Frameworks:** LangChain, LangGraph
-*   **Languages:** Python (Pandas, NumPy, BeautifulSoup, Requests), SQL, Bash
-*   **Core Mechanics:** Vector Search, Stateful Memory Management, Automated Web Ingestion, Dynamic Routing
+(I'm still adding content; more folders and notebooks will appear over time.)
 
+## ⚙️ Basic setup & running notebooks
+1. Install Python 3.10+ (I use 3.11 in my environment).
+2. Create a virtual environment and install dependencies. If a `requirements.txt` is added, run:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+   pip install -r requirements.txt
+   ```
+3. Run Jupyter Lab / Notebook to open the example notebooks:
+   ```bash
+   pip install jupyterlab
+   jupyter lab
+   ```
+
+Notes:
+- Some demos rely on external API keys and local model endpoints. Set the following environment variables as needed in your environment or a .env file:
+  - AICREDITS_API_KEY
+  - AICREDITS_BASE_URL
+  - HF_TOKEN (for Hugging Face model pulls)
+  - TAVILY_API_KEY (if using Tavily Search in examples)
+
+## 🚧 Security & responsible usage
+- Be careful with API keys and secrets — never commit them to the repo. Use environment variables or a secrets manager.
+- The notebooks are experiments and may call external services; review code before running on production data.
+
+## 🤝 Contributing
+This repo is personal and under active development. If you'd like to contribute or report issues:
+- Open an issue to suggest improvements or point out bugs
+- Submit a pull request with a short description of changes
+
+If you want help converting notebooks into runnable examples / CI workflows or bundling a requirements file, tell me what environment you prefer and I can add it.
+
+## 📬 Contact
+GitHub: https://github.com/ShivaUlavi
+
+---
+
+I'll keep this README updated as I add more content. If you want specific sections (installation scripts, badge/status, examples list, or a license) added now, tell me which and I will update them.
