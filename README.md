@@ -46,7 +46,7 @@ python -m venv .venv
 source .venv/bin/activate   # or .venv\Scripts\activate on Windows
 ```
 
-2. Install core tools (I add a requirements file on request):
+2. Install core tools:
 
 ```bash
 pip install jupyterlab
