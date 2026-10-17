@@ -1,0 +1,41 @@
+# Core and optional dependencies for the GenAI repo
+# Installer: pip install -r requirements.txt
+
+# Core runtime / notebooks
+jupyterlab
+ipykernel
+ipython
+python-dotenv
+
+# Data & models
+datasets
+transformers
+torch
+sentence-transformers
+
+# Vector search (optional, choose one / install as needed)
+faiss-cpu
+# chromadb
+# milvus
+
+# LangChain / orchestration / agent tooling
+langchain
+langgraph
+pydantic
+langchain-community
+
+# Integrations / tools (some are optional / examples in notebooks)
+requests
+beautifulsoup4
+langchain_tavily
+# If your notebooks use a specific provider SDK or wrapper, enable them here
+# e.g., openai, aicredits-sdk
+
+# Optional utilities for local model demos
+# ollama-client  # uncomment if using Ollama
+
+# Notes:
+# - Some specialized packages (e.g., `langchain_tavily`, `langgraph`) may require
+#   specific installation instructions or pre-release builds. If you hit import
+#   errors, check the notebook that needs the package and install only what's required.
+# - Pin versions in a follow-up commit when you have a stable, reproducible environment.
