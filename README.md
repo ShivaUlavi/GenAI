@@ -1,62 +1,98 @@
-# Generative AI & Agentic Workflows Hub
+# Generative AI & Agentic Workflows — Portfolio
 
-Welcome — this repository is my central hub for experiments, demos, and research work in generative AI and agentic workflows. I'm actively developing and adding materials (notebooks, demos, and utilities) — expect the contents to change over time.
+Welcome — this repository is my living portfolio of experiments, demos, and reference implementations in generative AI and agentic orchestration. It highlights working prototypes, research-oriented notebooks, and utilities I use to prototype advanced LLM workflows.
 
-> Status: Work in progress — I'll be uploading new notebooks, tools, and examples as I continue building.
-
-## 🔎 Overview
-
-This repo collects hands-on examples and reference implementations around modern GenAI patterns and multi-agent orchestration.
-
-### Primary focus
-- Agentic architectures and orchestrations
-- LangChain / LangGraph based workflows and stateful reasoning graphs
-- Retrieval-Augmented Generation (RAG) patterns and vector search
-- Prompt engineering, structured outputs, and robust pipeline error handling
-
-## 📂 Repository layout
-- `LangGraphDemo/` — advanced agentic workflows and multi-agent examples (state graphs, reflection agents, Tree-of-Thought demos)
-- `RAG/` — retrieval-augmented generation experiments, chunking, vector DB integrations, and re-ranking
-- `Tools/` — custom tool integrations (web scraping, API wrappers, system helpers)
-- Notebooks such as `Prompt_templates.ipynb`, `ErrorHandling.ipynb`, and `Local_models_demo.ipynb`
-
-(I'm still adding content; more folders and notebooks will appear over time.)
-
-## ⚙️ Basic setup & running notebooks
-1. Install Python 3.10+ (I use 3.11 in my environment).
-2. Create a virtual environment and install dependencies. If a `requirements.txt` is added, run:
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-   pip install -r requirements.txt
-   ```
-3. Run Jupyter Lab / Notebook to open the example notebooks:
-   ```bash
-   pip install jupyterlab
-   jupyter lab
-   ```
-
-Notes:
-- Some demos rely on external API keys and local model endpoints. Set the following environment variables as needed in your environment or a .env file:
-  - AICREDITS_API_KEY
-  - AICREDITS_BASE_URL
-  - HF_TOKEN (for Hugging Face model pulls)
-  - TAVILY_API_KEY (if using Tavily Search in examples)
-
-## 🚧 Security & responsible usage
-- Be careful with API keys and secrets — never commit them to the repo. Use environment variables or a secrets manager.
-- The notebooks are experiments and may call external services; review code before running on production data.
-
-## 🤝 Contributing
-This repo is personal and under active development. If you'd like to contribute or report issues:
-- Open an issue to suggest improvements or point out bugs
-- Submit a pull request with a short description of changes
-
-If you want help converting notebooks into runnable examples / CI workflows or bundling a requirements file, tell me what environment you prefer and I can add it.
-
-## 📬 Contact
-GitHub: https://github.com/ShivaUlavi
+> Status: Active work-in-progress. I update notebooks and add demos frequently; think of this as a lab notebook and portfolio combined.
 
 ---
 
-I'll keep this README updated as I add more content. If you want specific sections (installation scripts, badge/status, examples list, or a license) added now, tell me which and I will update them.
+## Quick highlights
+
+- Focus on agentic and multi-agent architectures (LangChain, LangGraph)
+- Practical demos for Retrieval-Augmented Generation (RAG) and vector-search integrations
+- Notebooks demonstrating robust pipeline design: error handling, prompt patterns, and local model setups
+
+---
+
+## Portfolio structure (select highlights)
+
+- LangGraphDemo/
+  - MultiAgentArchitecture/ — reflection agents, communicating agents, Tree-of-Thought demos
+  - Stateful and graph-based orchestrations showcasing conditional routing and iterative reasoning
+
+- RAG/
+  - End-to-end retrieval + LLM pipelines, document chunking, vector DB connectors, and re-ranking strategies
+
+- Tools/
+  - Custom tool wrappers and integrations used by agents (web ingestion, API wrappers, scrapers)
+
+- Notebooks (sample)
+  - Prompt_templates.ipynb — structured prompt engineering, Chain-of-Thought patterns, output parsers
+  - ErrorHandling.ipynb — retry/backoff patterns, rate-limit handling, validation strategies
+  - Local_models_demo.ipynb — running and integrating local/open models (Hugging Face / Ollama)
+
+This repo mixes polished demos with exploratory notebooks; some files are prototype code and not production hardened — please review before reuse.
+
+---
+
+## Polished portfolio sections (what I can add next)
+If you want this README to act like a formal portfolio landing page, I can add:
+- A curated demo gallery (short descriptions + links to runnable notebooks)
+- Status badges (CI, Python version, Docker image, coverage)
+- A Roadmap / Milestones section showing planned features and upcoming notebooks
+- Installation scripts and a requirements.txt / environment.yml for reproducible execution
+
+Tell me which items above you'd like and I will add them.
+
+---
+
+## Getting started (recommended)
+1. Clone the repo and create a virtual environment:
+
+```bash
+git clone https://github.com/ShivaUlavi/GenAI.git
+cd GenAI
+python -m venv .venv
+source .venv/bin/activate   # or .venv\Scripts\activate on Windows
+```
+
+2. Install core tools (I add a requirements file on request):
+
+```bash
+pip install jupyterlab
+# pip install -r requirements.txt  # when requirements file is present
+jupyter lab
+```
+
+3. Environment variables
+Some notebooks require external API keys or tokens. Configure these in your environment or a .env file (DO NOT commit secrets):
+
+- AICREDITS_API_KEY, AICREDITS_BASE_URL — used by some examples
+- HF_TOKEN — (optional) for Hugging Face model downloads
+- TAVILY_API_KEY — (optional) for Tavily Search demonstrations
+
+---
+
+## Responsible use & security
+- Never add API keys to commits; use environment variables or a secrets manager.
+- Review notebooks before running — some demos call external services or web APIs.
+- These examples are research/educational; not intended for production without further hardening.
+
+---
+
+## Contributing & contact
+This is my personal portfolio-repo but contributions are welcome.
+- Open an issue to request a feature or report a bug
+- Send a PR with a short description of the change
+
+Contact / profile: https://github.com/ShivaUlavi
+Email: shivachetanulavi@gmail.com
+
+---
+
+## License
+If you'd like a permissive license added (MIT, Apache-2.0) tell me which and I will add a LICENSE file.
+
+---
+
+I updated the README into a polished portfolio style: clearer sections, curated highlights, and next-step suggestions. If you want a demo gallery, badges, or an installation requirements file added now, tell me which pieces to prioritize and I will add them in the next commit.
