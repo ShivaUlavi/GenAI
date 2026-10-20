@@ -1,63 +1,45 @@
 # MultiModalAgents
 
-This folder contains examples for multimodal AI workflows using local vision-capable models with Ollama and LangChain. It focuses on analyzing images and video clips using prompts that combine visual understanding with LLM reasoning.
+This directory presents a focused collection of multimodal AI workflows designed for visual understanding, video analysis, and exercise assessment. The projects collectively examine how language models and vision-capable systems can be integrated to interpret workout footage, summarize movement quality, and generate structured feedback from visual evidence.
 
-## What this folder includes
+## Included components
 
-- `VideoAnalysisInBatches.py` — batch-processing script that extracts frames from videos, sends them to a vision-capable Ollama model, and saves Markdown analysis reports.
-- `04_Batch_Video_Analysis_ThreadPool.py` — similar batch video analysis pipeline implemented with `ThreadPoolExecutor` for parallel processing.
+- `01_sequential_multimodal_narrative_generator.ipynb` — a sequential multimodal pipeline for generating narrative descriptions from visual inputs and task-specific prompts.
+- `02_asynchronous_multimodal_portfolio_evaluator.ipynb` — an asynchronous evaluation workflow for assessing multimodal outputs in a portfolio-style analytical setting.
+- `03_Local_Edge_Gym_Form_Analyzer_Ollama.ipynb` — a local edge-oriented gym form analysis workflow built around Ollama, emphasizing privacy-preserving and resource-efficient deployment.
+- `04_Batch_Video_Analysis_ThreadPool.py` — a scalable batch-processing script that analyzes multiple videos in parallel by extracting frames and evaluating them with a multimodal model.
+- `WorkoutAnalyzerApp/` — a Streamlit-based application that allows users to upload a workout video and receive automated feedback on technique and movement quality. Additional implementation details are provided in the app-specific README within this folder.
 
-## Use cases
+## Research and application focus
 
-- Gym workout video analysis
-- Exercise detection and form review
-- Posture, motion, and range-of-motion evaluation
-- Summarizing key visual cues from multiple frames
+The workflows in this folder are oriented toward several core use cases:
 
-## Workflow overview
+- Exercise recognition and classification
+- Gym form assessment and biomechanical review
+- Posture, range-of-motion, and movement quality analysis
+- Multimodal reasoning over sequential visual frames
+- Local deployment of vision-language pipelines for practical experimentation
 
-1. Read video files from a target folder.
-2. Extract sampled frames (keyframes) from each video.
-3. Convert frames to base64 image data.
-4. Send the frames and a prompt to a multimodal model via LangChain.
-5. Save per-video Markdown analytical reports and a consolidated JSON summary.
+## Typical workflow
 
-## Requirements
+1. Load one or more workout videos from a local directory.
+2. Extract representative frames or keyframes from each video.
+3. Convert visual data into a format suitable for multimodal inference.
+4. Invoke a vision-capable model to reason over the extracted frames.
+5. Generate structured assessments, recommendations, and summaries for each video or batch.
 
-Install the necessary dependencies:
+## Technical requirements
 
-```bash
-pip install opencv-python langchain langchain-ollama
-```
+These examples are designed for local execution and typically depend on:
 
-Also ensure Ollama is installed and running locally, and that you have a compatible multimodal model available, such as a vision-capable model pulled into Ollama.
-
-## Example usage
-
-```python
-from MultiModalAgents.VideoAnalysisInBatches import run_batch_pipeline
-
-run_batch_pipeline(r"C:\Users\YourName\Desktop\workout_test", output_dir="analysis_outputs", max_workers=2)
-```
-
-Or run the script directly:
-
-```bash
-python MultiModalAgents/VideoAnalysisInBatches.py
-```
+- Python
+- OpenCV
+- LangChain
+- Ollama
+- A vision-capable local model compatible with multimodal inference
 
 ## Notes
 
-- The scripts are configured for local execution and rely on an Ollama-hosted model.
-- Keyframes are temporarily created during processing and cleaned up afterward.
-- The output directory stores one Markdown report per video plus a `batch_summary.json` file.
+The scripts in this directory are intended as practical research and prototyping tools for multimodal video analytics in fitness and exercise contexts. They demonstrate how local AI systems can support detailed visual interpretation without requiring a fully cloud-based deployment pipeline.
 
-## Example prompt behavior
-
-The model is prompted to:
-
-- Identify the exercise being performed
-- Assess form stability, posture, and range of motion
-- Highlight likely issues or improvement areas
-
-This folder is intended as a practical starting point for local multimodal experimentation with AI-driven video analysis.
+The `WorkoutAnalyzerApp` extends this work into a user-facing interface, enabling interactive video upload and feedback generation in a streamlined application environment.
