@@ -48,7 +48,7 @@ These errors were not random; they highlighted a specific limitation: without te
 
 ## Example Observations
 
-### Correct classification example (Image 1)
+### Correct classification example (Image 3)
 
 A deadlift or squat-like recognition case was successfully interpreted with a coherent explanation of:
 
@@ -59,11 +59,15 @@ A deadlift or squat-like recognition case was successfully interpreted with a co
 
 This is an example of the model performing well when the motion is visually structured and the exercise is biomechanically legible from the sampled frames.
 
-### Misclassification example (Image 2)
+![Image 3 - Correct classification example](./images/workout-correct-classification.png)
 
-A farmers walk clip was incorrectly analyzed as a squat-like pattern. The model appeared to latch onto the vertical body posture and stationary-stage cues while missing the key fact that the movement was traveling and dynamic.
+### Misclassification example (Image 4)
+
+A farmers walk clip was incorrectly analyzed as a squat-like pattern. The model appeared to latch onto the vertical body posture and stationary-stage cues while missing the key fact that the movement was traveling through space.
 
 This result is a strong example of spatial/temporal hallucination in multimodal analysis when frame sampling is too sparse.
+
+![Image 4 - Misclassification example](./images/workout-misclassification.png)
 
 ## Interpretation
 
