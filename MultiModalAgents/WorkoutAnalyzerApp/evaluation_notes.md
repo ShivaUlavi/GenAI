@@ -57,17 +57,21 @@ This was one of the clearest examples of spatial-temporal confusion. The model t
 
 ## Image-based interpretation
 
-### Image 1: Correct classification example
+### Image 3: Correct classification example
 
 This image shows a successful exercise identification case. The model correctly recognized the movement and described the progression, posture, and stability in a way that aligned with the visible mechanics.
 
 This is an example of the app working well when the motion is structured, stable, and visually legible from the sampled frames.
 
-### Image 2: Misclassification example
+![Image 3 - Correct classification example](./images/workout-correct-classification.png)
+
+### Image 4: Misclassification example
 
 This image shows a farmers walk clip that was incorrectly interpreted as a squat-focused movement. The model latched onto a static posture and inferred a different exercise pattern instead of preserving the fact that the athlete was walking through space.
 
 This example is useful because it demonstrates the main limitation of sparse sampling: the model can lose the movement context that distinguishes one exercise from another.
+
+![Image 4 - Misclassification example](./images/workout-misclassification.png)
 
 ## Key evaluation takeaway
 
