@@ -10,7 +10,7 @@ This project is designed to help users evaluate gym movement quality without req
 2. The app samples frames at a configurable interval.
 3. Extracted frames are resized and saved temporarily.
 4. A multimodal model inspects the sequence of frames.
-5. The system returns an analysis of the exercise being performed and suggestions for improvement.
+5. The system returns a likely exercise identification and form-related suggestions.
 
 ## Key Components
 
@@ -37,30 +37,28 @@ This module loads a vision-language model through `langchain_ollama` and prepare
 - User uploads a workout video in MP4/MOV/AVI/MKV format.
 - The app extracts keyframes at a chosen sampling interval.
 - The selected frames are analyzed by the multimodal model.
-- Results include the likely exercise, whether the movement is stationary or traveling, form stability assessment, and practical corrective suggestions.
+- Results include the likely exercise, movement classification, form assessment, and corrective suggestions.
 
 ## Use Case
 
 This project is useful for:
 
-- Exercise form review
-- Gym technique feedback
-- Quick AI-assisted movement analysis
-- Research or experimentation with multimodal prompting for fitness understanding
+- exercise form review
+- gym technique feedback
+- quick AI-assisted movement analysis
+- experimentation with local multimodal prompting for fitness understanding
 
-## Suggested Project Structure for Detailed Results
+## Project Documentation
 
-This README is intentionally kept at a high-level technical overview. Detailed findings, evaluation notes, example outputs, limitations, and performance observations should live in a separate document such as:
+This README is intentionally kept at a high-level technical overview. Deeper findings and evaluation notes are documented in:
 
-- `results.md`
-- `project_findings.md`
-- `evaluation_notes.md`
-
-That keeps the repository README clean and easy to scan while preserving deeper analysis in a dedicated results file.
+- `results.md` — summary of outcomes, architecture comparison, and practical findings
+- `project_findings.md` — technical interpretation, prompt engineering, and next steps
+- `evaluation_notes.md` — assessment notes, failure cases, and example-image analysis
 
 ## Basic Run Instructions
 
-1. Install dependencies.
+1. Install the required dependencies.
 2. Pull the Ollama model used by the app.
 3. Run the Streamlit application from the project folder.
 
