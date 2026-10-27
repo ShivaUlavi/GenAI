@@ -1,90 +1,119 @@
-# GenAI: Generative AI, Agentic Systems, and Multimodal Experiments
+# GenAI Portfolio
 
-This repository is a hands-on portfolio of generative AI and agentic workflow work built around LangChain, LangGraph, retrieval-augmented generation (RAG), structured tool use, and multimodal AI. It brings together notebooks, demos, and prototype apps that explore how LLM-based systems can reason, retrieve information, generate structured output, and interact with external tools.
+I build and explore practical generative AI systems that combine language models, retrieval, tools, orchestration, and multimodal reasoning. This repository is my portfolio of experiments, prototypes, and applied demos in agentic AI and LLM workflows.
 
-The work in this repo reflects an ongoing learning and experimentation path across several core themes:
+The work here focuses on turning ideas into working systems: from prompt engineering and retrieval pipelines to LangGraph agents, multimodal analysis, and tool-using AI applications.
 
-- Agentic orchestration with LangGraph
-- Retrieval-augmented generation and document QA
-- Tool calling, planning, and structured outputs
-- Multimodal workflows for vision and video analysis
-- Local model experimentation and API token testing
-- Validation loops for code generation and workflow reliability
+> Status: Active research and prototyping workspace
 
-## Current focus areas
+## What I am building
 
-### 1. LangGraph and agentic orchestration
-The repository includes graph-based examples for building stateful, tool-using, and multi-step AI systems. Notable work includes:
+This repo brings together several core areas of modern AI engineering:
 
-- Simple LangGraph demos and routing patterns
-- Graphs with output parsing and structure enforcement
-- Multi-agent architecture experiments for collaborative reasoning
-- Basic chatbot patterns and conversational orchestration
+- Agentic workflows with LangGraph and LangChain
+- Retrieval-augmented generation (RAG) and grounded Q&A
+- Tool calling, planning, and structured output generation
+- Multimodal AI for images, video, and visual reasoning
+- Local model experimentation and provider testing
+- Validation loops for improving LLM reliability and output quality
 
-### 2. Retrieval-Augmented Generation (RAG)
-A major part of the repo focuses on building practical RAG systems for document processing and knowledge retrieval:
+## Portfolio themes
 
-- Document loading and chunking workflows
-- Retriever implementations for query-to-context matching
-- LLM integration for grounded generation
-- Streamlit-based RAG applications for corporate or domain-specific Q&A
-- Citation-aware retrieval workflows for documentation use cases
+### 1. Agentic systems
+I explore how LLMs can move beyond simple chat to orchestrated, stateful workflows with memory, branching logic, and tool use.
 
-### 3. Tool use and agent capabilities
-Several examples explore how agents can call tools, execute plans, and return structured results:
+Highlights:
+- LangGraph demos and graph-based orchestration
+- Multi-agent architecture experiments
+- Conversational and stateful agent patterns
+- Output parsing and structured response design
 
-- Built-in tool usage demos
-- Custom tools for domain-specific integrations
-- Tool node patterns in agent graphs
-- Plan-and-solve workflows
-- Structured output schemas for deterministic agent responses
+### 2. Retrieval and knowledge systems
+I build retrieval workflows that connect models to external knowledge and domain data.
 
-### 4. Multimodal AI and video understanding
-The repository includes a growing set of multimodal experiments focused on visual understanding and fitness/video analysis:
+Highlights:
+- Document ingestion and chunking pipelines
+- Retriever implementations for semantic search
+- LLM + vector retrieval patterns
+- Corporate documentation and grounded Q&A systems
 
+### 3. Tools and workflow automation
+These projects investigate how agents can act through tools, coordinate tasks, and produce reliable execution flows.
+
+Highlights:
+- Built-in and custom tool demos
+- Structured outputs and tool node patterns
+- Planning-first agent patterns
+- Tool-enabled reasoning workflows
+
+### 4. Multimodal AI
+I also explore multimodal intelligence for visual tasks, exercise analysis, and video understanding.
+
+Highlights:
 - Sequential multimodal narrative generation
-- Asynchronous multimodal evaluation pipelines
-- Local multimodal analysis using Ollama and vision-capable models
-- Batch video analysis using parallel processing
-- WorkoutAnalyzerApp for video upload and technique feedback
+- Asynchronous multimodal evaluation workflows
+- Workout and form analysis using vision models
+- Local video understanding with Ollama and multimodal pipelines
 
-### 5. Software and data analysis agents
-The repo also includes experimentation with agents for technical tasks and analytical workflows:
+### 5. Practical AI engineering
+A large part of the repo is devoted to reliability, experimentation, and improving real-world usability of AI systems.
 
-- RAG-based code generation with validation loops
-- Python code generation patterns
-- Agent workflows aimed at software engineering and analytical decision support
-
-### 6. Prompting, error handling, and model testing
-Supporting notebooks and scripts focus on reliability and experimentation:
-
-- Prompt engineering templates
-- Error handling and retry patterns
+Highlights:
+- Prompt pattern testing
+- Retry/error handling and robustness patterns
 - Local model inference checks
-- API token validation for OpenAI, Claude, Gemini, and Hugging Face
-- Ollama and local LLM testing workflows
+- LLM API token and setup validation
+- Code-generation workflows with validation loops
 
 ## Repository structure
 
-- `LangGraphDemo/` — LangGraph workflows, graph orchestration, and multi-agent demos
-- `RAG/` — retrieval pipelines, retrievers, LLM wrappers, and Streamlit app prototypes
-- `Tools/` — tool integration demos, output schemas, and planning examples
-- `MultiModalAgents/` — multimodal and video-analysis experiments
-- `SoftwareAndDataAnalysisAgents/` — code-generation and analysis-agent prototypes
-- `TestScripts/` — local model validation and provider token tests
-- `Prompt_templates.ipynb` — structured prompting experiments
-- `ErrorHandling.ipynb` — retry, recovery, and failure-handling patterns
-- `requirements.txt` — Python dependencies used across the project
+- `LangGraphDemo/` — LangGraph experiments, graph orchestration, and multi-agent demos
+- `RAG/` — retrieval pipelines, retrievers, LLM integration, and app prototypes
+- `Tools/` — tool use, planning, structured outputs, and agent tooling
+- `MultiModalAgents/` — multimodal reasoning, vision workflows, and video analysis
+- `SoftwareAndDataAnalysisAgents/` — code generation and analytical agent experiments
+- `TestScripts/` — local model validation and provider/API tests
+- `Prompt_templates.ipynb` — prompt-engineering experiments
+- `ErrorHandling.ipynb` — reliability and failure-handling patterns
+- `requirements.txt` — project dependencies
 
-## Notable examples
+## Featured work
 
-- `RAG/streamlit_app_V3.py` — interactive RAG app for document-based Q&A
-- `RAG/rag.py` — orchestration of the retrieval + generation pipeline
-- `MultiModalAgents/04_Batch_Video_Analysis_ThreadPool.py` — parallelized video analysis workflow
-- `MultiModalAgents/WorkoutAnalyzerApp/` — app-based workout feedback and form assessment
+### RAG and knowledge retrieval
+- `RAG/streamlit_app_V3.py` — interactive app for grounded document-based Q&A
+- `RAG/rag.py` — main retrieval + generation orchestration flow
+- `RAG/retriever.py` — custom retrieval logic and chunking approach
+
+### LangGraph and agent orchestration
+- `LangGraphDemo/SimpleLangGraphDemo.ipynb` — foundational graph workflow example
+- `LangGraphDemo/GraphWithOutputParser.ipynb` — structured parsing within a graph flow
+- `LangGraphDemo/MultiAgentArchitecture/` — collaborative agent architecture patterns
+
+### Tools and agent capabilities
 - `Tools/CustomToolsDemo.ipynb` — custom tool orchestration examples
-- `Tools/PlanAndSolve.ipynb` — planning-first agent workflows
-- `SoftwareAndDataAnalysisAgents/RAG_Code_Generation_with_Validation_Loop.ipynb` — reasoning + validation loop for code generation
+- `Tools/PlanAndSolve.ipynb` — planning-driven AI workflows
+- `Tools/StructuredOutput.ipynb` — schema-based generation patterns
+
+### Multimodal AI
+- `MultiModalAgents/01_sequential_multimodal_narrative_generator.ipynb` — narrative generation from visual input
+- `MultiModalAgents/02_asynchronous_multimodal_portfolio_evaluator.ipynb` — multimodal evaluation workflow
+- `MultiModalAgents/03_Local_Edge_Gym_Form_Analyzer_Ollama.ipynb` — local multimodal form analysis
+- `MultiModalAgents/WorkoutAnalyzerApp/` — video upload and technique feedback app
+
+### Software and analysis agents
+- `SoftwareAndDataAnalysisAgents/RAG_Code_Generation_with_Validation_Loop.ipynb` — code generation with feedback-based validation
+- `SoftwareAndDataAnalysisAgents/python_code_generation.ipynb` — generation patterns for Python tasks
+
+## Tech stack
+
+- Python
+- LangChain
+- LangGraph
+- Streamlit
+- Jupyter Notebooks
+- Ollama
+- OpenAI / Anthropic / Gemini / Hugging Face integrations
+- Vector-store and retrieval workflows
 
 ## Getting started
 
@@ -95,7 +124,7 @@ git clone https://github.com/ShivaUlavi/GenAI.git
 cd GenAI
 ```
 
-2. Create and activate a Python environment
+2. Create and activate a virtual environment
 
 ```bash
 python -m venv .venv
@@ -108,35 +137,32 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Launch notebooks or apps as needed
+4. Launch notebooks or run project-specific apps
 
 ```bash
 jupyter lab
 ```
 
-For app-based demos, use the relevant script or Streamlit app in the directory you want to run.
+## Environment notes
 
-## Environment variables and setup notes
-
-Some demos rely on external APIs or local services. Common environment variables and services used across examples include:
+Some examples require external API keys or local services. Common variables include:
 
 - `AICREDITS_API_KEY`
 - `AICREDITS_BASE_URL`
 - `HF_TOKEN`
 - `TAVILY_API_KEY`
-- Local Ollama instances for vision/local model workflows
 
-Keep secrets in environment variables or a local `.env` file and avoid committing credentials.
+Keep secrets in local environment variables or a `.env` file and do not commit credentials.
 
-## Status
+## My approach
 
-This repo is an active learning and prototyping workspace. It contains experiments, research notebooks, and proof-of-concept systems rather than a single production-ready product. The focus is on exploring architectures, workflows, and practical patterns in modern generative AI.
+I treat this repo as a live engineering notebook: exploring patterns, testing architectures, and building practical prototypes that sit between research and application. The emphasis is on learning by building, validating assumptions through working examples, and iterating toward more robust AI systems.
 
 ## Contact
 
-GitHub: https://github.com/ShivaUlavi
-Email: shivachetanulavi@gmail.com
+- GitHub: https://github.com/ShivaUlavi
+- Email: shivachetanulavi@gmail.com
 
 ---
 
-This repository documents the progression of work from foundational LLM workflows to agentic systems, multimodal reasoning, and retrieval-first AI applications.
+This repository reflects my ongoing work in generative AI, agentic systems, RAG, multimodal reasoning, and applied LLM engineering.
