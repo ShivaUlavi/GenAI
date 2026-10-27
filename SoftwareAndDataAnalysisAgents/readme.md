@@ -1,6 +1,6 @@
 # Software & Data Analysis Agents
 
-This folder contains experiments and prototypes focused on building agentic systems for software development and data analysis workflows.
+This folder contains experiments and prototypes focused on building agentic systems for software development, data analysis, and local machine learning workflows.
 
 ## Included work
 
@@ -10,22 +10,26 @@ This folder contains experiments and prototypes focused on building agentic syst
 - `python_code_generation.ipynb`  
   A notebook exploring code generation patterns and tooling for Python-based agent workflows.
 
+- `Local_Data_Analysis_and_ML_Agent.ipynb`  
+  A local-first notebook focused on data analysis and machine learning workflows, enabling exploratory analysis, feature understanding, and insight generation from datasets without depending on remote services.
+
 ## Overview
 
 The goal of this collection is to experiment with agents that can:
 
 - retrieve and reason over project context
-- generate useful code and analysis artifacts
+- analyze local datasets and generate insights
+- generate useful code, visualizations, and model artifacts
 - validate outputs through feedback loops
 - support both software engineering and analytics-oriented tasks
 
 ## Current focus
 
-This area is centered on building intelligent systems that can help with developer workflows, technical reasoning, and data-driven decision support.
+This area is centered on building intelligent systems that can help with developer workflows, technical reasoning, local data analysis, and ML-assisted decision support.
 
 ## Next step
 
-The next step is to create a data science agent that can work with datasets, run exploratory analysis, generate insights, and help automate analytical workflows.
+The next step is to extend this work with more robust agent orchestration for data science tasks, model evaluation, and end-to-end automation across structured and unstructured data.
 
 ---
 
