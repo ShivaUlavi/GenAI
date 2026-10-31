@@ -1,66 +1,37 @@
 # Software & Data Analysis Agents
 
-This repository section explores the design and implementation of intelligent systems that combine retrieval, reasoning, data analysis, and machine learning for software-centric and data-centric workflows. The work focuses on developing agentic pipelines that can interpret complex tasks, retrieve relevant context, generate code or analytical outputs, and iterate on results through validation loops.
+This directory explores agentic workflows at the intersection of software engineering, data analysis, and machine learning. The projects focus on retrieval-based reasoning, code generation, local analysis, and iterative validation to improve the quality and reliability of AI-assisted outputs.
 
-## Research and Product Focus
+## Scope
 
-The projects in this directory investigate how AI-enabled agents can support practical decision-making across two complementary domains:
-
-- software engineering and code generation
-- exploratory data analysis and machine learning workflows
-
-The emphasis is on building systems that move beyond static prompting by incorporating contextual retrieval, structured experimentation, and feedback-driven refinement.
+The work in this folder examines how AI agents can support:
+- software development tasks and code generation
+- retrieval-augmented workflows
+- exploratory data analysis and machine learning
+- feedback-driven refinement and validation
 
 ## Included Work
 
 - `RAG_Code_Generation_with_Validation_Loop.ipynb`
-  - A retrieval-augmented generation workflow that integrates external context with code synthesis and automated validation to improve correctness and reduce hallucination.
+  - Demonstrates a retrieval-augmented generation pipeline with validation to improve output correctness and reduce hallucination.
 
 - `python_code_generation.ipynb`
-  - A Python-focused notebook exploring prompting strategies, generation patterns, and agentic development workflows for programming tasks.
+  - Explores code generation patterns and prompting strategies for Python-based workflows.
 
 - `Local_Data_Analysis_and_ML_Agent.ipynb`
-  - A local-first notebook for data exploration, feature understanding, model experimentation, and insight generation without requiring cloud-dependent execution.
+  - Focuses on local-first data analysis and machine learning experimentation.
 
 - `DataScienceAgent/`
-  - A structured subfolder containing reusable assets for exploratory analysis, model development, plotting, and pipeline organization.
+  - A structured subfolder for reusable data science assets, notebooks, visualizations, and model-related artifacts.
 
 ## Objectives
 
-This collection aims to explore systems that can:
+This collection aims to develop intelligent systems that can:
+- reason over project context
+- analyze local datasets and generate insights
+- produce code, visualizations, and model outputs
+- validate results through iterative feedback
 
-- retrieve and reason over project context
-- analyze domain-specific datasets and generate actionable insights
-- produce code, visualizations, and model artifacts
-- validate outputs through iterative feedback mechanisms
-- support both technical software workflows and analytics-oriented tasks
+## Future Direction
 
-## Methodological Approach
-
-The work is organized around a practical research-oriented workflow:
-
-1. define the task and required context
-2. retrieve relevant information or project artifacts
-3. generate candidate outputs or hypotheses
-4. evaluate correctness, quality, and relevance
-5. refine the process through iterative improvement
-
-This loop reflects a broader goal: building AI systems that are not only capable of producing outputs, but also of reasoning about their reliability and improving through validation.
-
-## Portfolio Significance
-
-This folder represents applied experimentation in intelligent, agent-driven workflows across software and data science. It showcases an interest in building systems that are grounded in real-world data, reusable tooling, and robust iterative methodologies—key themes in both research and professional AI product development.
-
-## Future Directions
-
-Future work in this area can extend toward:
-
-- more advanced agent orchestration and planning
-- stronger evaluation and benchmarking frameworks
-- automated data pipelines and reporting workflows
-- end-to-end experimentation for structured and unstructured data
-- production-ready tooling for AI-assisted analysis and engineering
-
----
-
-This section serves as a foundation for experimenting with agentic systems that bridge software engineering, machine learning, and data-driven reasoning.
+The broader goal is to extend this work toward more robust orchestration, evaluation frameworks, and end-to-end automation for data-driven and software-oriented AI systems.
