@@ -1,39 +1,45 @@
 # DataScienceAgent
 
-This folder contains a local-first data science and machine learning agent workflow focused on exploratory analysis, experimentation, and model-driven insight generation.
+This project explores a structured, local-first workflow for data science and machine learning experimentation. The goal is to create a reusable environment for data exploration, model development, and analytical reasoning in a way that is both technically rigorous and easy to extend.
 
 ## Purpose
 
-The goal of this module is to package reusable data science assets into a structured project layout that supports:
+The DataScienceAgent folder is designed to support a practical research and development pipeline for working with data at scale, including:
 
-- loading and exploring datasets
-- cleaning and transforming raw data
-- training and evaluating ML models
-- generating plots and visual summaries
-- documenting analysis workflows in notebooks
-- supporting agentic reasoning over data and model results
+- dataset loading and preprocessing
+- exploratory data analysis
+- feature engineering and transformation
+- model training and evaluation
+- visualization and insight generation
+- notebook-based experimentation and documentation
 
-## Folder structure
+## Repository Structure
 
-- `data/` — input datasets, processed data, and supporting files
-- `models/` — saved model artifacts, checkpoints, and serialized outputs
-- `notebooks/` — experimentation notebooks and analysis workflows
-- `plots/` — charts, visualizations, and reporting artifacts
-- `src/` — reusable source code for data processing, modeling, and agent logic
+- `data/` — source datasets, processed files, and supporting data artifacts
+- `models/` — trained models, checkpoints, and serialized outputs
+- `notebooks/` — exploratory and analytical notebooks
+- `plots/` — charts, summary visualizations, and reporting outputs
+- `src/` — reusable source code for data processing, modeling, and analysis utilities
 
-## Typical workflow
+## Workflow
 
-1. Load a dataset from `data/`
-2. Clean and preprocess the data for analysis
-3. Run experiments in the notebooks or source modules
-4. Train, validate, and compare models in `models/`
-5. Generate visual insights in `plots/`
-6. Use the results to inform decisions, reports, or agent-driven automation
+The typical workflow follows a reproducible and transparent research process:
 
-## Related work
+1. ingest and validate raw data from `data/`
+2. clean and preprocess the dataset for analysis
+3. perform exploratory analysis to understand structure and quality
+4. train and compare candidate models or analytical approaches
+5. generate plots and interpret model or data outputs
+6. document findings in notebooks or structured reports
 
-This folder sits inside the broader `SoftwareAndDataAnalysisAgents` collection and complements notebook-based prototypes for software generation, RAG systems, and local ML workflows.
+## Research Perspective
+
+This module reflects a broader interest in building intelligent systems that can reason over data, surface meaningful insights, and support evidence-based decision making. It is intended as a foundation for applied experimentation in machine learning, local analytics, and interpretability-driven workflows.
+
+## Portfolio Relevance
+
+This work demonstrates a practical understanding of end-to-end data science pipelines, including both technical implementation and analytical thinking. It is well-suited for showcasing capabilities in experimentation, workflow design, and applied AI systems development.
 
 ## Notes
 
-This project is intended as a starting point for building practical, local, and explainable AI workflows for data science tasks, with room to extend into deeper automation, reporting pipelines, and more advanced agent orchestration.
+The repository is intentionally structured to be extensible and suitable for future development in automated analysis, model evaluation, reporting pipelines, and more advanced agent-driven data workflows.
