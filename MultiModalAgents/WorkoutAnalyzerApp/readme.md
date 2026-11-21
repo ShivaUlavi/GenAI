@@ -75,3 +75,15 @@ streamlit run app.py
 - The analysis prompt can be customized in the UI for different movement types or evaluation preferences.
 
 This project is a practical example of combining video processing and multimodal AI to create an interactive exercise-analysis tool.
+
+## Phase 2: Grounded Spatio-Temporal Perception Pipeline (Work in Progress)
+
+**Motivation:** While Phase 1 demonstrated that a compact local Vision-Language Model (`Bonsai 2B` via Ollama) runs smoothly on constrained hardware (4GB VRAM) for static frames, it exhibits spatial-temporal hallucinations during dynamic compound movements. Phase 2 introduces an explicit upstream perception cascade to ground VLM reasoning with structured spatial and motion priors.
+
+**Current Progress & Roadmap:**
+- [x] **Automated Bounding-Box Annotation:** Built a `LangChain` + `Nvidia Nemotron 3.5 Super VL` pipeline to annotate 530 extracted workout frames, paired with manual verification and dataset cleaning.
+- [x] **Custom Object Detection (YOLO):** Trained custom detection models to localize key equipment classes (`barbell`, `dumbbell`, `trap_bar`, and `weight_plates`).
+- [ ] **Activity & Motion Recognition:** Integrating `UCF101`-based temporal modeling to track continuous exercise trajectories and motion dynamics.
+- [ ] **Grounded VLM Inference:** Passing verified spatial-temporal bounding boxes and motion context into local `Bonsai 2B` inference to suppress hallucinations.
+
+*Status: The automated annotation scripts, training notebooks, trained YOLO weights, and UCF101 integration code are currently being finalized locally and will be pushed to this repository soon.*
